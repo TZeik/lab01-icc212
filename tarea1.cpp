@@ -142,6 +142,7 @@ void heapSort(vector<int>& arr) {
 void printDatos(vector<int>& arr) {
     
     cout << "Datos del arreglo" << endl;
+
     for(int num : arr){
         cout << num << " ";
     }
@@ -169,6 +170,10 @@ int main() {
     printDatos(datos);
     cout << endl << endl;
 
+
+
+    /*
+
     //BubbleSort: Prueba con 'n' números aleatorios.
     cout << "Algoritmo de Ordenamiento Bubblesort" << endl;
     auto start = std::chrono::high_resolution_clock::now();
@@ -187,8 +192,6 @@ int main() {
     printDatos(datos);
     cout << "Tiempo de ejecución: " << elapsed.count() << " segundos" << endl;
 
-    /*
-
     //MergeSort: Prueba con 'n' números aleatorios.
     cout << "Algoritmo de Ordenamiento Mergesort" << endl;
     auto start = std::chrono::high_resolution_clock::now();
@@ -206,6 +209,7 @@ int main() {
     chrono::duration<double> elapsed = end - start;
     printDatos(datos);
     cout << "Tiempo de ejecución: " << elapsed.count() << " segundos" << endl;
+    */
 
     //HeapSort: Prueba con 'n' números aleatorios.
     cout << "Algoritmo de Ordenamiento Heapsort" << endl;
@@ -215,8 +219,6 @@ int main() {
     chrono::duration<double> elapsed = end - start;
     printDatos(datos);
     cout << "Tiempo de ejecución: " << elapsed.count() << " segundos" << endl;
-
-    */
 
     return 0;
 }
